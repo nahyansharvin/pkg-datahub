@@ -1,16 +1,29 @@
 {
-  "name": "katzion-datahub",
+  "name": "@nahyansharvin/katzion-datahub",
   "version": "0.0.1",
   "description": "DataHub for katzin packages",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+     "dist"
+  ],
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-lib": "rollup -c"
   },
   "author": "nahyan",
   "license": "ISC",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "devDependencies": {
     "@reduxjs/toolkit": "^2.0.1",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
     "@types/react": "^18.2.45",
+    "rollup": "^4.9.0",
+    "rollup-plugin-dts": "^6.1.0",
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
