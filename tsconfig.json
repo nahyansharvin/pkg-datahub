@@ -6,6 +6,7 @@
      "moduleResolution": "node",
      "declaration": true, 
      "emitDeclarationOnly": true,
+     "rootDir": "src",
      "outDir": "dist", 
      "declarationDir": "types",
      "allowSyntheticDefaultImports": true,

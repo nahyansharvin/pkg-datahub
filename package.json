@@ -1,11 +1,11 @@
 {
   "name": "@nahyansharvin/katzion-datahub",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "DataHub for katzin packages",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
-     "dist"
+    "dist"
   ],
   "types": "dist/index.d.ts",
   "scripts": {
@@ -24,10 +24,11 @@
     "@types/react": "^18.2.45",
     "rollup": "^4.9.0",
     "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.6.2",
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@reduxjs/toolkit": "^2.0.1",
+    "react": "^18.2.0"
   }
 }

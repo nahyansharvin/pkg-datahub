@@ -1,1 +1,1 @@
-export { increment, decrement } from "./redux/counterSlice"
+export { increment, decrement } from "./redux/slices/counterSlice"

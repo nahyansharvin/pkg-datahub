@@ -1,5 +1,5 @@
 import { combineReducers, Reducer } from "@reduxjs/toolkit";
-import counterReducer, {CounerState} from "./counterSlice"
+import counterReducer, {CounerState} from "./slices/counterSlice"
 
 export interface RootState {
     counter: CounerState
